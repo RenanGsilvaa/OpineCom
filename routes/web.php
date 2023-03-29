@@ -25,6 +25,6 @@ Route::get('/usuario/{usuario}/show', [UsuarioController::class, 'show'])->name(
 Route::get('/usuario/{usuario}/editar', [UsuarioController::class, 'edit'])->name('usuarios.edit');
 Route::post('/usuarios/store', [UsuarioController::class, 'store'])->name('usuarios.store');
 Route::put('/usuarios/{usuario}', [UsuarioController::class, 'update'])->name('usuario.update');
-route::delete('/usuario/{usuario}/destroy', [UsuarioController::class, 'destroy'])->name('usuario.destroy');
+route::delete('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])->name('usuario.destroy');
 
 //Opinião
