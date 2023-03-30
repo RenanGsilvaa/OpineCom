@@ -28,3 +28,4 @@ Route::put('/usuarios/{usuario}', [UsuarioController::class, 'update'])->name('u
 route::get('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])->name('usuario.destroy');
 
 //Opinião
+route::get('/opiniao/create', [OpiniaoController::class, 'create'])->name('opiniao.create');

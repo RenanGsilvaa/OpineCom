@@ -29,5 +29,5 @@
         <div>
             <input type="submit" value="Atualizar o usuário">
         </div>
-
+    </form>
 @endsection

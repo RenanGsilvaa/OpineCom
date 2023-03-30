@@ -47,7 +47,7 @@ class UsuarioController extends Controller
     {
         $usuario->update($requisicao->all());
 
-        return redirect()->route('usuarios.show', $usuario->id);
+        return redirect()->route('usuario.show', $usuario->id);
     }
 
     

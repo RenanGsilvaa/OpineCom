@@ -2,4 +2,5 @@
 
 @section('content')
 <a href="{{route('usuarios.create')}}">Criar um Usuário</a>
+<a href="{{route('opiniao.create')}}">Fazer uma avalação</a>
 @endsection
