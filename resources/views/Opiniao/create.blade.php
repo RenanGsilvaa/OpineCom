@@ -12,8 +12,8 @@
             <input type="date" name="data">
         </div>
         <div>
-            <label>Documento: </label>
-            <input type="varchar" name="documento">
+            <label>Nome: </label>
+            <input type="varchar" name="nome">
         </div>    
         <div>
             <label>Empresa:</label>
@@ -24,6 +24,12 @@
             <input type="text" name="produto">
         </div>
 
+        <div>
+            <label>Sua avaliação: </label>
+            <input type="text" name="avaliacao">
+        </div>
+
+        
         <div>
             <input type="submit" value="Publicar">
         </div>

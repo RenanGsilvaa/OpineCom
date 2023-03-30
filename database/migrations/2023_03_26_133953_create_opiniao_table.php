@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('opiniao', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->date('data');
+            $table->string('nome');
+            $table->string('empresa');
+            $table->string('produto');
+            $table->string('avaliacao');
             $table->timestamps();
         });
     }
