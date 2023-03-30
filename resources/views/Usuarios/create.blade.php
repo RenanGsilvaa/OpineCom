@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('content')
-<form action="{{route('usuarios.store')}}" method="post">
+<form action="{{route('usuarios.store')}}" method="POST">
     @csrf
         <div>
             <label>Nome: </label>
