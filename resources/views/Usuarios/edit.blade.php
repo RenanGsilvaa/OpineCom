@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="{{route('usuarioS.store')}}" method="PUT">
+<form action="{{route('usuario.update')}}" method="post">
     @csrf
     @method('PUT')
         <div>
