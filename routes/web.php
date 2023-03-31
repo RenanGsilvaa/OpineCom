@@ -21,9 +21,10 @@ Route::get('/', [UsuarioController::class, 'index'])->name('usuarios.index');
 
 //Usuarios
 Route::get('/usuarios/novo', [UsuarioController::class, 'create'])->name('usuarios.create');
-Route::get('/usuario/{usuario}/show', [UsuarioController::class, 'show'])->name('usuario.show');
+Route::get('/usuario/{usuario}/show', [UsuarioController::class, 'show'])->name('usuarios.show');
 Route::get('/usuario/{usuario}/editar', [UsuarioController::class, 'edit'])->name('usuarios.edit');
 Route::post('/usuario/store', [UsuarioController::class, 'store'])->name('usuarios.store');
+Route::get('/usuarios/list', [UsuarioController::class, 'list'])->name('usuarios.list');
 Route::put('/usuarios/{usuario}', [UsuarioController::class, 'update'])->name('usuario.update');
 Route::get('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])->name('usuario.destroy');
 

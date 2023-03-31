@@ -32,6 +32,12 @@ class UsuarioController extends Controller
         return redirect()->route('usuario.show', $usuario->id);
     }
 
+    public function list()
+    {   
+        $usuario = Usuario::all();
+        return view('Usuarios.list', compact('usuario'));
+    }
+
     public function show(Usuario $usuario)
     {
         return view('Usuarios.show', compact('usuario'));
