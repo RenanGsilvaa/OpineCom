@@ -31,3 +31,4 @@ Route::get('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])
 //Opinião
 Route::get('/opiniao/novo', [OpiniaoController::class, 'create'])->name('opiniao.create');
 Route::post('/opiniao/store', [OpiniaoController::class, 'store'])->name('opiniao.store');
+Route::get('/opiniao/show', [OpiniaoController::class, 'show'])->name('opiniao.show');

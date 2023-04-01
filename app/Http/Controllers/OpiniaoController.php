@@ -16,15 +16,20 @@ class OpiniaoController extends Controller
     public function store(Request $requisicao)
     {
         $opniao = new Opiniao();
-
+        
+        $opniao->titulo = $requisicao->titulo;
         $opniao->nome = $requisicao->nome;
-        $opniao->idade = $requisicao->idade;
-        $opniao->documento = $requisicao->documento;
-        $opniao->email = $requisicao->email;
-        $opniao->senha = $requisicao->senha;
-
+        $opniao->empresa = $requisicao->empresa;
+        $opniao->produto = $requisicao->produto;
+        $opniao->avaliacao = $requisicao->avaliacao;
+        $opniao->data = $requisicao->data;
         $opniao->save();
 
-        return redirect()->route('opniao.show', $opniao->id);
+        return redirect()->route('opiniao.show', $opniao->id);
+    }
+
+    public function show(Opiniao $opiniao)
+    {
+        return view('Opiniao.show', compact('opiniao'));
     }
 }

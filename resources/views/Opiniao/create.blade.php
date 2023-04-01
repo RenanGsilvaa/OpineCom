@@ -5,7 +5,7 @@
     @csrf
         <div>
             <label>Titulo: </label>
-            <input type="text" name="Titulo">
+            <input type="text" name="titulo">
         </div>
         <div>
             <label>Data: </label>
@@ -16,7 +16,7 @@
             <input type="varchar" name="nome">
         </div>    
         <div>
-            <label>Empresa:</label>
+            <label>Empresa: </label>
             <input type="text" name="empresa">
         </div>
         <div>
