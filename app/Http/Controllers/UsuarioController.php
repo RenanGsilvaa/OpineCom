@@ -29,7 +29,7 @@ class UsuarioController extends Controller
 
         $usuario->save();
 
-        return redirect()->route('Usuarios.show', $usuario->id);
+        return redirect()->route('usuarios.show', $usuario->id);
     }
 
     public function list()
