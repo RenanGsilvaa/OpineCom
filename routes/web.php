@@ -32,5 +32,7 @@ Route::get('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])
 Route::get('/opiniao/index', [OpiniaoController::class, 'index'])->name('opiniao.index');
 Route::get('/opiniao/novo', [OpiniaoController::class, 'create'])->name('opiniao.create');
 Route::post('/opiniao/store', [OpiniaoController::class, 'store'])->name('opiniao.store');
-Route::get('/opiniao/show', [OpiniaoController::class, 'show'])->name('opiniao.show');
-Route::get('/opiniao/editar', [OpiniaoController::class, 'edit'])->name('opiniao.edit');
+Route::get('/opiniao/{opiniao}/show', [OpiniaoController::class, 'show'])->name('opiniao.show');
+Route::get('/opiniao/{opiniao}/editar', [OpiniaoController::class, 'edit'])->name('opiniao.edit');
+Route::get('/opiniao/{opinaio}', [OpiniaoController::class, 'update'])->name('opniao.update');
+Route::get('/opiniao/{opiniao}/destroy', [OpiniaoController::class, 'destroy'])->name('opiniao.destroy');

@@ -9,7 +9,7 @@
         <h1>{{$opiniao->data}}</h1>
         <h1>{{$opiniao->nome}}</h1>
         <h1>{{$opiniao->empresa}}</h1>
-        <a href="{{route('opiniao.edit', $opiniao->id)}}">Ver</a>
+        <a href="{{route('opiniao.show', $opiniao->id)}}">Ver</a>
         <br>
     @endforeach
 @endsection

@@ -1,5 +1,7 @@
 @extends('main')
 
 @section('content')
-    <h1>Publicação feita com sucesso!!</h1>
+    <h1>{{$opiniao->titulo}}</h1>
+    <h2>{{$opiniao->nome}}</h2>
+    <h2>{{$opiniao->data}}</h2>
 @endsection
