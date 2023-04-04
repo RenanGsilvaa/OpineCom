@@ -10,8 +10,8 @@ class OpiniaoController extends Controller
 {
     public function index()
     {
-        $Opiniao = Opiniao::all();
-        return view('Opiniao.index', compact('Opiniao'));
+        $opiniao = Opiniao::all();
+        return view('Opiniao.index', compact('opiniao'));
     }
 
     
