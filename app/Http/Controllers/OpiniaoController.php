@@ -8,6 +8,13 @@ use App\Models\Opiniao;
 
 class OpiniaoController extends Controller
 {
+    public function index()
+    {
+        $Opiniao = Opiniao::all();
+        return view('Opiniao.index', compact('Opiniao'));
+    }
+
+    
     public function create()
     {
         return view('Opiniao.create');

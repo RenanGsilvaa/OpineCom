@@ -29,6 +29,7 @@ Route::put('/usuarios/{usuario}', [UsuarioController::class, 'update'])->name('u
 Route::get('/usuarios/{usuario}/destroy', [UsuarioController::class, 'destroy'])->name('usuario.destroy');
 
 //Opinião
+Route::get('/opiniao/index', [OpiniaoController::class, 'index'])->name('opiniao.index');
 Route::get('/opiniao/novo', [OpiniaoController::class, 'create'])->name('opiniao.create');
 Route::post('/opiniao/store', [OpiniaoController::class, 'store'])->name('opiniao.store');
 Route::get('/opiniao/show', [OpiniaoController::class, 'show'])->name('opiniao.show');
