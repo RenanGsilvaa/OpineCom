@@ -6,6 +6,7 @@
     @foreach ($Opiniao as $opiniao)
         <br>
         <h1>{{$opiniao->titulo}}</h1>
+        <a href="{{route('opiniao.edit, $opiniao->id')}}">Ver</a>
         <br>
     @endforeach
 @endsection

@@ -39,4 +39,25 @@ class OpiniaoController extends Controller
     {
         return view('Opiniao.show', compact('opiniao'));
     }
+
+    
+    public function edit(Opiniao $opiniao)
+    {
+        return view('Opiniao.edit', compact('opiniao'));
+    }
+
+    public function update(Request $requisicao, Opiniao $Opiniao)
+    {
+        $Opiniao->update($requisicao->all());
+
+        return redirect()->route('Opiniao.show', $Opiniao->id);
+    }
+
+    
+    public function destroy(Opiniao $usuario)
+    {
+        $usuario->delete();
+
+        return redirect()->route('Opiniao.index');
+    }
 }

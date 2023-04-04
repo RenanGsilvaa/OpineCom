@@ -33,3 +33,4 @@ Route::get('/opiniao/index', [OpiniaoController::class, 'index'])->name('opiniao
 Route::get('/opiniao/novo', [OpiniaoController::class, 'create'])->name('opiniao.create');
 Route::post('/opiniao/store', [OpiniaoController::class, 'store'])->name('opiniao.store');
 Route::get('/opiniao/show', [OpiniaoController::class, 'show'])->name('opiniao.show');
+Route::get('/opiniao/editar', [OpiniaoController::class, 'edit'])->name('opiniao.edit');
