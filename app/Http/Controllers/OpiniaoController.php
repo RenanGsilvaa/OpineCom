@@ -37,20 +37,20 @@ class OpiniaoController extends Controller
 
     public function show(Opiniao $opiniao)
     {
-        return view('Opiniao.show', compact('opiniao'));
+        return view('opiniao.show', compact('opiniao', $opiniao->id));
     }
 
     
     public function edit(Opiniao $opiniao)
     {
-        return view('Opiniao.edit', compact('opiniao'));
+        return view('opiniao.edit', compact('opiniao'));
     }
 
     public function update(Request $requisicao, Opiniao $Opiniao)
     {
         $Opiniao->update($requisicao->all());
 
-        return redirect()->route('Opiniao.show', $Opiniao->id);
+        return redirect()->route('opiniao.show', $Opiniao->id);
     }
 
     

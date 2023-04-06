@@ -34,5 +34,5 @@ Route::get('/opiniao/novo', [OpiniaoController::class, 'create'])->name('opiniao
 Route::post('/opiniao/store', [OpiniaoController::class, 'store'])->name('opiniao.store');
 Route::get('/opiniao/{opiniao}/show', [OpiniaoController::class, 'show'])->name('opiniao.show');
 Route::get('/opiniao/{opiniao}/editar', [OpiniaoController::class, 'edit'])->name('opiniao.edit');
-Route::get('/opiniao/{opinaio}', [OpiniaoController::class, 'update'])->name('opniao.update');
+Route::put('/opiniao/{opinaio}', [OpiniaoController::class, 'update'])->name('opniao.update');
 Route::get('/opiniao/{opiniao}/destroy', [OpiniaoController::class, 'destroy'])->name('opiniao.destroy');
